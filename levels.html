@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Degree Programs | CSE Faculty</title>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom right, #f0f4ff, #ffffff);
+    color: #333;
+    animation: fadeBody 0.8s ease-in-out;
+  }
+
+  @keyframes fadeBody {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  header {
+    background: linear-gradient(to right, #002752, #004b8d);
+    padding: 5px 20px;
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    animation: zoomIn 1s ease;
+  }
+
+  @keyframes zoomIn {
+    from { transform: scale(0.95); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+
+  header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  header p {
+    font-size: 16px;
+    color: #cbd6e2;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    animation: slideIn 1s ease;
+  }
+
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+    transition: 0.4s ease-in-out;
+    border-top: 4px solid #007bff;
+    animation: fadeCard 1.2s ease;
+  }
+
+  @keyframes fadeCard {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 123, 255, 0.2);
+  }
+
+  .card h2 {
+    font-size: 24px;
+    color: #0056b3;
+    margin-bottom: 15px;
+  }
+
+  .card p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #555;
+  }
+</style>
+
+</head>
+<body>
+
+    <section class="header1">
+            <nav>
+                <div class="nav-links">
+                    <ul>
+                <li><a href="home.html"><i class="fas fa-home icon icon-blue"></i><span>Home</span></a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle icon icon-purple"></i><span>About</span></a></li>
+                <li><a href="dept_teacher.html"><i class="fas fa-chalkboard-teacher icon icon-green"></i><span>Teachers</span></a></li>
+                <li><a href="dept_teacher.html"><i class="fas fa-chalkboard-teacher icon icon-green"></i><span>Staffs</span></a></li>
+                <li><a href="levels.html"><i class="fas fa-layer-group icon icon-orange"></i><span>Levels</span></a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope icon icon-red"></i><span>Contact</span></a></li>
+                <li><a href="notice.php"><i class="fas fa-bell icon icon-yellow"></i><span>Notice</span></a></li>
+                <li><a href="dean_merit.php"><i class="fas fa-medal icon icon-gold"></i><span>Merit</span></a></li>
+                <li><a href="portal.html"><i class="fas fa-sign-in-alt icon icon-yellow"></i><span>Login</span></a></li>
+                    </ul>
+           </div>
+        </nav> 
+    </section>
+
+<header>
+  <h1>🎓 Degree Programs</h1>
+  <p>Faculty of Computer Science & Engineering, PSTU</p>
+</header>
+
+<section class="container">
+  <div class="card">
+  <h2>🎓 Bachelor of Science (BSc)</h2>
+
+  <div >
+    <div class="degree-info">
+      <div class="info-item">📚 <span>4-year duration</span></div>
+      <div class="info-item">📖 <span>165 Credit hours</span></div>
+      <div class="info-item">⏰ <span>8 Semesters</span></div>
+    </div>
+
+    <ul >
+      <li>Computer Science And Engineering</li>
+    </ul>
+  </div>
+
+  <div class="course">
+    <a href="course.html" style="justify-content: center; text-decoration: none;">➤ See Courses</a>
+  </div>
+</div>
+
+
+  <div class="card">
+    <h2>📘 Master of Science  (MSc)</h2>
+    <div >
+    <div class="degree-info">
+      <div class="info-item">📚 <span>2-year duration</span></div>
+      <div class="info-item">📖 <span>60 Credit hours</span></div>
+      <div class="info-item">⏰ <span>4 Semesters</span></div>
+    </div>
+
+    <ul >
+      <li>Advanced Computer Science</li>
+      <li>Data Science</li>
+      <li>Artificial Intelligence</li>
+    </ul>
+  </div>
+
+  <div class="course">
+    <a href="course.html" style="justify-content: center; text-decoration: none;">➤ See Courses</a>
+  </div>
+</div>
+
+  <div class="card">
+    <h2>📕 Doctor of Philosophy (PhD)</h2>
+    <div >
+    <div class="degree-info">
+      <div class="info-item">📚 <span>3-4 year duration</span></div>
+      <div class="info-item">📖 <span>Research-based</span></div>
+      <div class="info-item">📘 <span>Thesis Required</span></div>
+    </div>
+
+    <ul >
+      <li>Computer Science Research</li>
+      <li>Artificial Intelligence</li>
+      <li>Machine Learning</li>
+    </ul>
+  </div>
+
+  <div class="course">
+    <a href="course.html" style="justify-content: center; text-decoration: none;">➤ See Courses</a>
+  </div>
+</div>
+</section>
+
+<footer class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fab fa-facebook-f" style="color: blue;"></i> <span>Facebook</span></a>
+    <a href="#"><i class="fab fa-linkedin-in" style="color: blue;"></i> <span>LinkedIn</span></a>
+    <a href="#"><i class="fab fa-youtube" style="color: #fc198a;"></i> <span>YouTube</span></a>
+  </div>
+  <p>© 2025 CSE at PSTU. All rights reserved. Developed by Senarul</p>
+</footer>
+
+</body>
+</html>

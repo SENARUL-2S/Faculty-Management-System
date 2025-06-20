@@ -1,0 +1,63 @@
+<style>
+        body {
+            background: #e2e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0; /* এটুকু নতুন করে যোগ করো */
+        }
+        .login-box {
+            background: white;
+            padding: 35px;
+            border-radius: 6px;
+            max-width: 550px;
+            width: 100%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 5px;
+            color: #1e3c72;
+        }
+
+        form input[type="number"],
+        form input[type="text"],
+        form input[type="email"],
+        form input[type="date"],
+        form input[type="password"] {
+            width: 100%;
+            padding: 5px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            background: #eaf0ff;
+        }
+
+    .form-group label {
+    display: block;
+    margin-bottom: 4px; /* আগে ছিল 8px */
+    font-weight: 500;
+}
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #1e3c72;
+            color: white;
+            align-items: center;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background: #2a5298;
+        }
+        .error-msg {
+            color: red;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    </style>

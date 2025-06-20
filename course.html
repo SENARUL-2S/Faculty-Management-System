@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE Course Layout</title>
+    <link rel="stylesheet" href="home.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>body {
+    background: linear-gradient(135deg, #f6f8fc 0%, #e9ecef 100%);
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 60px;
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.header {
+    background: linear-gradient(to right, #002752, #004b8d);
+    padding: 5px 10px;
+    text-align: center;
+    margin-top: 5px;
+    color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    animation: zoomIn 1s ease;
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.95); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 16px;
+    color: #cbd6e2;
+}
+.semester-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.semester {
+    flex: 1;
+    min-width: 530px;
+}
+
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    animation: fadeInTable 1s ease-in;
+}
+
+@keyframes fadeInTable {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.table td,
+.table th {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 8px;
+}
+
+.credit-total {
+    padding: 15px 20px;
+    text-align: right;
+    font-weight: bold;
+    color: #1e3c72;
+    border-top: 2px solid #eee;
+    animation: fadeIn 1s ease-in-out;
+}
+</style>
+</head>
+<body>
+        <section class="header1">
+            <nav>
+                <div class="nav-links">
+                    <ul>
+                <li><a href="home.html"><i class="fas fa-home icon icon-blue"></i><span>Home</span></a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle icon icon-purple"></i><span>About</span></a></li>
+                <li><a href="dept_teacher.html"><i class="fas fa-chalkboard-teacher icon icon-green"></i><span>Teachers</span></a></li>
+                <li><a href="dept_teacher.html"><i class="fas fa-chalkboard-teacher icon icon-green"></i><span>Staffs</span></a></li>
+                <li><a href="levels.html"><i class="fas fa-layer-group icon icon-orange"></i><span>Levels</span></a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope icon icon-red"></i><span>Contact</span></a></li>
+                <li><a href="notice.php"><i class="fas fa-bell icon icon-yellow"></i><span>Notice</span></a></li>
+                <li><a href="dean_merit.php"><i class="fas fa-medal icon icon-gold"></i><span>Merit</span></a></li>
+                <li><a href="portal.html"><i class="fas fa-sign-in-alt icon icon-yellow"></i><span>Login</span></a></li>
+                    </ul>
+            </div>
+        </nav>
+    </section>
+
+
+     <div class="header">
+            <h1>Course Layout of BSc in Computer Science and Engineering</h1>
+            <p>[B. Sc.Engg. (CSE)]</p>
+     </div>
+
+    <div class="container">
+       <div class="semester-row">
+        <div class="semester">
+        <!-- Level-1 Semester-I -->
+        <h1 style=" text-align: center;">Level-1 Semester-I</h1>
+        <table class="table">
+            <tr>
+                <th>Course Code</th>
+                <th>Course Title</th>
+                <th>Cr. Hr.</th>
+            </tr>
+
+            <tr>
+                <td >PHY111</td>
+                <td>Physics-I</td>
+                <td >3.00</td>
+            </tr>
+            <tr>
+                <td >PHY112</td>
+                <td>Physics-I Sessional</td>
+                <td >0.75</td>
+            </tr>
+            <tr>
+                <td>CHE111</td>
+                <td>Chemistry</td>
+                <td >3.00</td>
+            </tr>
+            <tr>
+                <td >CHE112</td>
+                <td>Chemistry Sessional</td>
+                <td >0.75</td>
+            </tr>
+            <tr>
+                <td >MAT111</td>
+                <td>Mathematics-I</td>
+                <td >3.00</td>
+            </tr>
+            <tr>
+                <td >EEE111</td>
+                <td>Basic Electrical Engineering</td>
+                <td >3.00</td>
+            </tr>
+            <tr>
+                <td >EEE112</td>
+                <td>Basic Electrical Engineering Sessional</td>
+                <td >1.50</td>
+            </tr>
+            <tr>
+                <td>CIT111</td>
+                <td>Programming Language</td>
+                <td >3.00</td>
+            </tr>
+            <tr>
+                <td >CIT112</td>
+                <td>Programming Language Sessional</td>
+                <td >1.50</td>
+            </tr>
+            <tr>
+                <td >CCE112</td>
+                <td>Engineering Drawing</td>
+                <td >0.75</td>
+            </tr>
+        </table>
+        <div class="credit-total">Total Cr. Hr. = 20.25</div>
+
+        </div>
+
+       <div class="semester">
+        <!-- Level-1 Semester-II -->
+        <h1 style=" text-align: center;">Level-1 Semester-II</h1>
+        <table class="table">
+
+            <tr>
+                <th>Course Code</th>
+                <th>Course Title</th>
+                <th>Cr. Hr.</th>
+            </tr>
+
+            <tr>
+                <td >PHY121</td>
+                <td>Physics-II</td>
+                <td >3.00</td>
+            </tr>
+            <tr>
+                <td >PHY122</td>
+                <td>Physics-II Sessional</td>
+                <td >0.75</td>
+            </tr>
+            <tr>
+                <td >MAT121</td>
+                <td>Mathematics-II</td>
+                <td>3.00</td>
+            </tr>
+            <tr>
+                <td >CIT121</td>
+                <td>Discrete Mathematics</td>
+                <td >3.00</td>
+            </tr>
+            <tr>
+                <td >LCM121</td>
+                <td>Communicative English</td>
+                <td>2.00</td>
+            </tr>
+            <tr>
+                <td >EEE121</td>
+                <td>Electronic Device and Circuits</td>
+                <td >3.00</td>
+            </tr>
+            <tr>
+                <td >EEE122</td>
+                <td>Electronic Device and Circuits Sessional</td>
+                <td >1.50</td>
+            </tr>
+            <tr>
+                <td>CCE121</td>
+                <td>Object Oriented Programming</td>
+                <td >3.00</td>
+            </tr>
+            <tr>
+                <td >CCE122</td>
+                <td>Object Oriented Programming Sessional</td>
+                <td>1.50</td>
+            </tr>
+            <tr>
+                <td >CCE124</td>
+                <td>Computer Programming Contest-I</td>
+                <td >0.00</td>
+            </tr>
+        </table>
+        <div class="credit-total">Total Cr. Hr. = 20.75</div>
+
+
+        </div>
+        </div>
+
+      <div class="semester-row">
+         <div class="semester">
+        <!-- Level-2 Semester-I -->
+        <h1 style=" text-align: center;">Level-2 Semester-I</h1>
+        <table class="table">
+            <tr>
+                <th>Course Code</th>
+                <th>Course Title</th>
+                <th>Cr. Hr.</th>
+            </tr>
+            <tr>
+                <td >CIT211</td>
+                <td>Data Structure and Algorithms</td>
+                <td >3.00</td>
+            </tr>
+            <tr>
+                <td>CIT212</td>
+                <td>Data Structure and Algorithms Sessional</td>
+                <td >1.50</td>
+            </tr>
+            <tr>
+                <td >CIT213</td>
+                <td>Software Engineering</td>
+                <td >3.00</td>
+            </tr>
+            <tr>
+                <td >CCE221</td>
+                <td>Data Communication and Engineering</td>
+                <td>3.00</td>
+            </tr>
+            <tr>
+                <td >MAT211</td>
+                <td>Mathematics-III</td>
+                <td >3.00</td>
+            </tr>
+            <tr>
+                <td >EEE211</td>
+                <td>Electrical Technology</td>
+                <td >3.00</td>
+            </tr>
+            <tr>
+                <td >EEE212</td>
+                <td>Electrical Technology Sessional</td>
+                <td >1.50</td>
+            </tr>
+            <tr>
+                <td >AIS211</td>
+                <td>Accounting and Management</td>
+                <td >3.00</td>
+            </tr>
+        </table>
+        <div class="credit-total">Total Cr. Hr. = 21.00</div>
+           
+     </div>
+
+     <div class="semester">
+        <!-- Level-2 Semester-II -->
+        <h1 style=" text-align: center;">Level-2 Semester-II</h1>
+        <table class="table">
+            <tr>
+                <th>Course Code</th>
+                <th>Course Title</th>
+                <th>Cr. Hr.</th>
+            </tr>
+            <tr>
+                <td >CCE221</td>
+                <td>Digital Logic Design</td>
+                <td >3.00</td>
+            </tr>
+            <tr>
+                <td >CCE222</td>
+                <td>Digital Logic Design Sessional</td>
+                <td >1.50</td>
+            </tr>
+            <tr>
+                <td >CCE223</td>
+                <td>Database System</td>
+                <td >3.00</td>
+            </tr>
+            <tr>
+                <td >CCE224</td>
+                <td>Database System Sessional</td>
+                <td >1.50</td>
+            </tr>
+            <tr>
+                <td >AES221</td>
+                <td>Government and Economics</td>
+                <td>3.00</td>
+            </tr>
+            <tr>
+                <td >MAT221</td>
+                <td>Mathematics-IV</td>
+                <td >3.00</td>
+            </tr>
+            <tr>
+                <td >CIT220</td>
+                <td>Web Programming Project</td>
+                <td >1.50</td>
+            </tr>
+            <tr>
+                <td >CIT221</td>
+                <td>Information System Analysis and Design</td>
+                <td >3.00</td>
+            </tr>
+            <tr>
+                <td >CIT222</td>
+                <td>Information System Analysis and Design Sessional</td>
+                <td >1.50</td>
+            </tr>
+            <tr>
+                <td >CIT224</td>
+                <td>Computer Programming Contest-II</td>
+                <td >0.00</td>
+            </tr>
+        </table>
+        <div class="credit-total">Total Cr. Hr. = 21.00</div>
+       </div>
+       </div>
+
+      <div class="semester-row">
+        <div class="semester">
+        <h1 style=" text-align: center;">Level-3 Semester-I</h1>
+        <table class="table">
+            <tr>
+                <th>Course Code</th>
+                <th>Course Title</th>
+                <th>Cr. Hr.</th>
+            </tr>
+            <tr>
+                <td>CIT311</td>
+                <td>Microprocessors and Assembly Language</td>
+                <td>3.00</td>
+            </tr>
+            <tr>
+                <td>CIT312</td>
+                <td>Microprocessors and Assembly Language Sessional</td>
+                <td>1.50</td>
+            </tr>
+            <tr>
+                <td>CIT313</td>
+                <td>Computer Organization and Architecture</td>
+                <td>3.00</td>
+            </tr>
+            <tr>
+                <td>CIT315</td>
+                <td>Artificial Intelligence</td>
+                <td>3.00</td>
+            </tr>
+            <tr>
+                <td>CIT316</td>
+                <td>Artificial Intelligence Sessional</td>
+                <td>1.50</td>
+            </tr>
+            <tr>
+                <td>CIT317</td>
+                <td>Software Development Project-I</td>
+                <td>1.50</td>
+            </tr>
+            <tr>
+                <td>CCE311</td>
+                <td>Numerical Methods</td>
+                <td>3.00</td>
+            </tr>
+            <tr>
+                <td>CCE312</td>
+                <td>Numerical Methods Sessional</td>
+                <td>1.50</td>
+            </tr>
+            <tr>
+                <td>CCE313</td>
+                <td>Computer Networks</td>
+                <td>3.00</td>
+            </tr>
+            <tr>
+                <td>CCE314</td>
+                <td>Computer Networks Sessional</td>
+                <td>1.50</td>
+            </tr>
+        </table>
+        <div class="credit-total">Total Cr. Hr. = 21.75</div>
+
+       </div>
+        <div class="semester">
+        <h1 style=" text-align: center;">Level-3 Semester-II</h1>
+        <table class="table">
+            <tr>
+                <th>Course Code</th>
+                <th>Course Title</th>
+                <th>Cr. Hr.</th>
+            </tr>
+            <tr>
+                <td>CIT320</td>
+                <td>Software Development Project-II</td>
+                <td>1.50</td>
+            </tr>
+            <tr>
+                <td>CIT321</td>
+                <td>Operating System</td>
+                <td>3.00</td>
+            </tr>
+            <tr>
+                <td>CIT322</td>
+                <td>Operating System Sessional</td>
+                <td>1.50</td>
+            </tr>
+            <tr>
+                <td>CCE320</td>
+                <td>Simulation and Modeling</td>
+                <td>3.00</td>
+            </tr>
+            <tr>
+                <td>CCE323</td>
+                <td>Simulation and Modeling Sessional</td>
+                <td>1.50</td>
+            </tr>
+            <tr>
+                <td>EEE321</td>
+                <td>Digital Electronics and Pulse Techniques</td>
+                <td>3.00</td>
+            </tr>
+            <tr>
+                <td>EEE322</td>
+                <td>Digital Electronics and Pulse Techniques Sessional</td>
+                <td>0.75</td>
+            </tr>
+            <tr>
+                <td>CCE330</td>
+                <td>Computer Programming Contest-III</td>
+                <td>0.00</td>
+            </tr>
+            <tr>
+                <td>CCE320</td>
+                <td>Computer Peripheral and Interfacing</td>
+                <td>3.00</td>
+            </tr>
+            <tr>
+                <td>CCE321</td>
+                <td>Computer Peripheral and Interfacing Sessional</td>
+                <td>1.50</td>
+            </tr>
+            <tr>
+                <td>CCE323</td>
+                <td>Optical Fiber Communication</td>
+                <td>3.00</td>
+            </tr>
+        </table>
+        <div class="credit-total">Total Cr. Hr. = 21.75</div>
+
+      </div>
+      </div>
+
+        <div class="semester-row">
+            <div class="semester">
+        <h1 style=" text-align: center;">Level-4 Semester-I</h1>
+        <table class="table">
+            <tr>
+                <th>Course Code</th>
+                <th>Course Title</th>
+                <th>Cr. Hr.</th>
+            </tr>
+            <tr>
+                <td>CSE410</td>
+                <td>Project/Thesis</td>
+                <td>3.00</td>
+            </tr>
+            <tr>
+                <td>CCE411</td>
+                <td>Algorithm Engineering</td>
+                <td>3.00</td>
+            </tr>
+            <tr>
+                <td>CCE413</td>
+                <td>VLSI Design</td>
+                <td>3.00</td>
+            </tr>
+            <tr>
+                <td>CCE415</td>
+                <td>Network Routing and Switching</td>
+                <td>3.00</td>
+            </tr>
+            <tr>
+                <td>CCE416</td>
+                <td>Network Routing and Switching Sessional</td>
+                <td>1.50</td>
+            </tr>
+            <tr>
+                <td>CCE417</td>
+                <td>Data Warehousing and Mining</td>
+                <td>3.00</td>
+            </tr>
+            <tr>
+                <td>CIT 411</td>
+                <td>Compiler Design and Automata Theory</td>
+                <td>3.00</td>
+            </tr>
+            <tr>
+                <td>CIT412</td>
+                <td>Compiler Design and Automata Theory Sessional</td>
+                <td>1.50</td>
+            </tr>
+        </table>
+        <div class="credit-total">Total Cr. Hr. = 22.00</div>
+        </div>
+        <div class="semester">
+
+        <h1 style=" text-align: center;">Level-4 Semester-II</h1>
+        <table class="table">
+            <tr>
+                <th>Course Code</th>
+                <th>Course Title</th>
+                <th>Cr. Hr.</th>
+            </tr>
+            <tr>
+                <td>CSE420</td>
+                <td>Project/Thesis</td>
+                <td>3.00</td>
+            </tr>
+            <tr>
+                <td>CCE421</td>
+                <td>Cryptography and Network Security</td>
+                <td>3.00</td>
+            </tr>
+            <tr>
+                <td>CCE423</td>
+                <td>Wireless and Cellular Communication</td>
+                <td>3.00</td>
+            </tr>
+            <tr>
+                <td>CIT421</td>
+                <td>Computer Graphics and Image Processing</td>
+                <td>3.00</td>
+            </tr>
+            <tr>
+                <td>CIT422</td>
+                <td>Computer Graphics and Image Processing Sessional</td>
+                <td>0.75</td>
+            </tr>
+            <tr>
+                <td>CIT423</td>
+                <td>OPTIONAL</td>
+                <td>3.00</td>
+            </tr>
+        </table>
+        <p style="text-align: center;"><strong>10 days In-country Study Tour</strong></p>
+        <div class="credit-total">Total Cr. Hr. = 16.50</div>
+        </div>
+        </div>
+        <div class="semester-row">
+            <div class="semester">
+        <h1 style=" text-align: center;">Optional Courses</h1>
+        <table class="table">
+            <tr>
+                <th>Course Code</th>
+                <th>Course Title</th>
+                <th>Credit Hours</th>
+            </tr>
+            <tr>
+                <td>OPTIONAL</td>
+                <td>Digital Signal Processing</td>
+                <td>3.00</td>
+            </tr>
+            <tr>
+                <td>OPTIONAL</td>
+                <td>Machine Learning</td>
+                <td>3.00</td>
+            </tr>
+            <tr>
+                <td>OPTIONAL</td>
+                <td>Parallel Processing and Distributed System</td>
+                <td>3.00</td>
+            </tr>
+            <tr>
+                <td>OPTIONAL</td>
+                <td>Robotics and Computer Vision</td>
+                <td>3.00</td>
+            </tr>
+        </table>
+        <div class="credit-total">Total Cr. Hr. = 12.00</div>
+     </div>
+     </div>
+
+    </div>
+    <footer class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fab fa-facebook-f" style="color: blue;"></i> <span>Facebook</span></a>
+    <a href="#"><i class="fab fa-linkedin-in" style="color: blue;"></i> <span>LinkedIn</span></a>
+    <a href="#"><i class="fab fa-youtube" style="color: #fc198a;"></i> <span>YouTube</span></a>
+  </div>
+  <p>© 2025 CSE at PSTU. All rights reserved. Developed by Senarul</p>
+</footer>
+
+</body>
+
+</html>

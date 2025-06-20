@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Portal</title>
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<style>
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom right, #f0f4ff, #ffffff);
+    color: #333;
+    animation: fadeBody 0.8s ease-in-out;
+  }
+
+  @keyframes fadeBody {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .container {
+    max-width: 1160px;
+    margin: 40px auto;
+    padding: 0 20px;
+    animation: slideIn 1s ease;
+  }
+
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .dashboard-title {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+  margin: 25px 0;
+  color: #1a237e;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+  .portal-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+  }
+  .portal-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  .portal-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgb(0 0 0 / 0.15);
+  }
+  .portal-card img {
+    width: 80px;
+    margin-bottom: 20px;
+  }
+  .portal-card h3 {
+    margin: 0 0 15px 0;
+    color: #8c1515;
+    font-size: 1.3rem;
+  }
+  .portal-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  .portal-card a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #004080;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  .portal-card a:hover {
+    background-color: #002f5a;
+  }
+  
+</style>
+</head>
+<body>
+
+    <section class="header1">
+            <nav>
+                <div class="nav-links">
+                    <ul>
+                <li><a href="home.html"><i class="fas fa-home icon icon-blue"></i><span>Home</span></a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle icon icon-purple"></i><span>About</span></a></li>
+                <li><a href="dept_teacher.html"><i class="fas fa-chalkboard-teacher icon icon-green"></i><span>Teachers</span></a></li>
+                <li><a href="dept_teacher.html"><i class="fas fa-chalkboard-teacher icon icon-green"></i><span>Staffs</span></a></li>
+                <li><a href="levels.html"><i class="fas fa-layer-group icon icon-orange"></i><span>Levels</span></a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope icon icon-red"></i><span>Contact</span></a></li>
+                <li><a href="notice.php"><i class="fas fa-bell icon icon-yellow"></i><span>Notice</span></a></li>
+                <li><a href="dean_merit.php"><i class="fas fa-medal icon icon-gold"></i><span>Merit</span></a></li>
+                <li><a href="portal.html"><i class="fas fa-sign-in-alt icon icon-yellow"></i><span>Login</span></a></li>
+                    </ul>
+           </div>
+        </nav> 
+    </section>
+
+    <!-- Dashboard Title -->
+  <div class="dashboard-title"> Welcome to Faculty Portal </div>
+
+  <div class="container">
+    <div class="portal-grid">
+      <div class="portal-card">
+        <img src="https://img.icons8.com/color/96/000000/student-center.png" alt="Student Portal" />
+        <h3>Student Portal</h3>
+        <p>Access your courses, grades, and campus resources anytime, anywhere.</p>
+        <a href="student_login.php"> Login </a>
+      </div>
+      <div class="portal-card">
+        <img src="https://img.icons8.com/color/96/000000/teacher.png" alt="Teacher Portal" />
+        <h3>Teacher Portal</h3>
+        <p>Manage classes, assignments, and communicate with students.</p>
+        <a href="teacher_login.php"> Login </a>
+      </div>
+      <div class="portal-card">
+        <img src="https://img.icons8.com/color/96/000000/admin-settings-male.png" alt="Admin Portal" />
+        <h3>Admin Portal</h3>
+        <p>Control system settings, user management, and oversee administrative tasks.</p>
+        <a href="admin_login.php"> Login </a>
+      </div>
+      <div class="portal-card">
+        <img src="https://img.icons8.com/color/96/000000/employee-card.png" alt="Staff Portal" />
+        <h3>Staff Portal</h3>
+        <p>Access work schedules, payroll, and internal communication tools.</p>
+        <a href="teacher_login.php"> Login </a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fab fa-facebook-f" style="color: blue;"></i> <span>Facebook</span></a>
+    <a href="#"><i class="fab fa-linkedin-in" style="color: blue;"></i> <span>LinkedIn</span></a>
+    <a href="#"><i class="fab fa-youtube" style="color: #fc198a;"></i> <span>YouTube</span></a>
+  </div>
+  <p>© 2025 CSE at PSTU. All rights reserved. Developed by Senarul</p>
+</footer>
+
+</body>
+</html>
